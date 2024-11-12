@@ -2,6 +2,10 @@
 
 namespace NeonBlack.Extensions
 {
+    /// <summary>
+    /// Extension methods for <see cref="Color"/>.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public static class ColorExtensions
     {
         public static Color MoveTowards(this Color currentColor, Color targetColor, float maxDelta)

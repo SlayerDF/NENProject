@@ -1,5 +1,9 @@
 namespace NeonBlack.Enums
 {
+    /// <summary>
+    /// All possible layers in the game.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public enum Layer
     {
         Default = 0,

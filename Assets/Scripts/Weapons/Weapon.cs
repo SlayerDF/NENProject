@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace NeonBlack.Weapons
 {
+    /// <summary>
+    /// Base class for weapons.
+    /// TP2 - Savina Elina
+    /// </summary>
     public abstract class Weapon : MonoBehaviour
     {
         #region Serialized Fields

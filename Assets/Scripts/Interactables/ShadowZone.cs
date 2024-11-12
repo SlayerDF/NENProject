@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Interactables
 {
+    /// <summary>
+    /// Shadow zone logic.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     [RequireComponent(typeof(BoxCollider))]
     public class ShadowZone : MonoBehaviour
     {

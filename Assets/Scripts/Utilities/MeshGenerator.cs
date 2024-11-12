@@ -2,6 +2,10 @@
 
 namespace NeonBlack.Utilities
 {
+    /// <summary>
+    /// Helper class to generate LOS mesh.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public static class MeshGenerator
     {
         public static Mesh GenerateLosMesh(float innerRadius, float outerRadius, float angle, float height,

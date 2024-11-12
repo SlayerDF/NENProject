@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Weapons
 {
+    /// <summary>
+    /// Weapon to distract enemies.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class DistractionWeapon : Weapon
     {
         #region Serialized Fields

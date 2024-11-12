@@ -6,6 +6,10 @@ using UnityEngine.InputSystem;
 
 namespace NeonBlack.Entities.Player
 {
+    /// <summary>
+    /// Contains the logic related to player attack.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public partial class PlayerInput
     {
         #region Serialized Fields

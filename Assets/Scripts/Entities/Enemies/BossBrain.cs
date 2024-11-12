@@ -9,6 +9,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies
 {
+    /// <summary>
+    /// Component that controls the main boss behavior.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class BossBrain : MonoBehaviour
     {
         private const float ToggleFollowSoundDebounceInterval = 0.5f;

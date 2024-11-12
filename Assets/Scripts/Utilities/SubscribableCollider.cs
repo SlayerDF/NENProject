@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace NeonBlack.Utilities
 {
+    /// <summary>
+    /// Collider with trigger events.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     [RequireComponent(typeof(Collider))]
     public class SubscribableCollider : MonoBehaviour
     {

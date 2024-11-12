@@ -5,6 +5,10 @@ using UnityEngine.AI;
 
 namespace NeonBlack.Entities.Enemies.Behaviors
 {
+    /// <summary>
+    /// Behavior that makes an entity follow the player.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class FollowPlayerBehavior : MonoBehaviour
     {
         #region Serialized Fields

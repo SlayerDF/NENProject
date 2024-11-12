@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace NeonBlack.Projectiles
 {
+    /// <summary>
+    /// Projectile of simple enemy.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class SimpleEnemyProjectile : Projectile
     {
         #region Serialized Fields

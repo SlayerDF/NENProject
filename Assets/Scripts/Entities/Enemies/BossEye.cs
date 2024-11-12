@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies
 {
+    /// <summary>
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class BossEye : MonoBehaviour
     {
         #region Serialized Fields

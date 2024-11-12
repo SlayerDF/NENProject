@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Projectiles
 {
+    /// <summary>
+    /// Projectile that distracts enemies.
+    /// TP2 - Elina Savina
+    /// </summary>
     [RequireComponent(typeof(SphereCollider))]
     public class DistractionWeaponProjectile : PhysicsProjectile
     {

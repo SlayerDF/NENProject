@@ -9,6 +9,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies
 {
+    /// <summary>
+    /// Contains the logic for flying enemy.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class FlyingEnemyBrain : MonoBehaviour, IDistractible
     {
         private const float CheckVisibilityInterval = 0.5f;

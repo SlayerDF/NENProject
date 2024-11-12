@@ -7,6 +7,7 @@ namespace NeonBlack.Entities.Enemies.Behaviors
     /// <summary>
     /// Contains the logic to smoothly transition between path points and check if a player
     /// is inside a target sphere. Where path point is a radius of the target sphere.
+    /// TP2 - Savina Elina
     /// </summary>
     public class LineOfSightByPathBehavior : MonoBehaviour
     {

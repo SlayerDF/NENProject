@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Player
 {
+    /// <summary>
+    /// Contains player animation logic.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class PlayerAnimation : EntityAnimation
     {
         private const int AttackTypesCount = 4;

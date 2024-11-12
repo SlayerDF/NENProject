@@ -4,6 +4,10 @@ using UnityEngine.AI;
 
 namespace NeonBlack.Entities.Enemies.Behaviors
 {
+    /// <summary>
+    /// Behavior to make an entity patrol a path.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class PatrolBehavior : MonoBehaviour
     {
         #region Serialized Fields

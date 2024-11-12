@@ -2,6 +2,10 @@
 
 namespace NeonBlack.Extensions
 {
+    /// <summary>
+    /// Extension methods for <see cref="GameObject"/>.
+    /// TP2 - Savina Elina.
+    /// </summary>
     public static class GameObjectExtensions
     {
         public static bool BelongsTo(this GameObject gameObject, LayerMask layerMask)

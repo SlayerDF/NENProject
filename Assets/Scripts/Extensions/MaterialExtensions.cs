@@ -2,6 +2,10 @@
 
 namespace NeonBlack.Extensions
 {
+    /// <summary>
+    /// Extension methods for <see cref="Material"/>.
+    /// TP2 - Savina Elina
+    /// </summary>
     public static class MaterialExtensions
     {
         private const string EmissionName = "_EmissionColor";

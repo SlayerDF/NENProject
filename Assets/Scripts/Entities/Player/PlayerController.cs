@@ -7,6 +7,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Player
 {
+    /// <summary>
+    /// Contains player logic.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class PlayerController : MonoBehaviour, IEntityHealth
     {
         #region Serialized Fields

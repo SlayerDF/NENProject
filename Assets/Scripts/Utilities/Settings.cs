@@ -2,6 +2,10 @@ using UnityEngine;
 
 namespace NeonBlack.Utilities
 {
+    /// <summary>
+    /// Game settings.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public static class Settings
     {
         public delegate void SettingChangedEventHandler(string settingKey);

@@ -9,6 +9,10 @@ namespace NeonBlack.Utilities
     {
     }
 
+    /// <summary>
+    /// Object pool manager.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class ObjectPoolManager : SceneSingleton<ObjectPoolManager>
     {
         private const int MaxCapacity = 20;

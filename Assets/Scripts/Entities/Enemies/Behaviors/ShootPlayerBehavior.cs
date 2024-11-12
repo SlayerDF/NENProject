@@ -6,6 +6,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies.Behaviors
 {
+    /// <summary>
+    /// Behavior that makes an entity shoot at the player.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class ShootPlayerBehavior : MonoBehaviour
     {
         #region Serialized Fields

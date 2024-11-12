@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace NeonBlack.Projectiles
 {
+    /// <summary>
+    /// Base class for projectiles.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public abstract class Projectile : PoolObject
     {
         #region Serialized Fields

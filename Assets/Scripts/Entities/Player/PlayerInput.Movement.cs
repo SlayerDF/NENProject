@@ -3,6 +3,10 @@ using UnityEngine.InputSystem;
 
 namespace NeonBlack.Entities.Player
 {
+    /// <summary>
+    /// Contains the logic related to player movement.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public partial class PlayerInput
     {
         private const float GroundGravity = -6.0f;

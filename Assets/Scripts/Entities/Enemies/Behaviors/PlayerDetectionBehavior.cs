@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies.Behaviors
 {
+    /// <summary>
+    /// Behavior that detects the player.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class PlayerDetectionBehavior : MonoBehaviour
     {
         #region Serialized Fields

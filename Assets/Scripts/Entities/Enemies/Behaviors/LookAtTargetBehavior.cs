@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies.Behaviors
 {
+    /// <summary>
+    /// Behavior that makes an entity look at the target.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class LookAtTargetBehavior : MonoBehaviour
     {
         #region Serialized Fields

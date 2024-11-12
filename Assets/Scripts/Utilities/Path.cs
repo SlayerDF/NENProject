@@ -4,6 +4,10 @@ using Debug = System.Diagnostics.Debug;
 
 namespace NeonBlack.Utilities
 {
+    /// <summary>
+    /// Helper class to build path for entities to patrol.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class Path : MonoBehaviour
     {
         #region Serialized Fields

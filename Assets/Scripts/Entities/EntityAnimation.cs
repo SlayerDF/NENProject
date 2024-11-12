@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities
 {
+    /// <summary>
+    /// Base class for entity animations.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public abstract class EntityAnimation : MonoBehaviour
     {
         #region Serialized Fields

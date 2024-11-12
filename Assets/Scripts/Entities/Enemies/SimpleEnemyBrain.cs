@@ -8,6 +8,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies
 {
+    /// <summary>
+    /// Contains the logic for simple enemy.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class SimpleEnemyBrain : MonoBehaviour, IDistractible
     {
         #region Serialized Fields

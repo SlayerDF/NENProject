@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Weapons
 {
+    /// <summary>
+    /// Throwing knife weapon.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class ThrowingKnife : Weapon
     {
         #region Serialized Fields

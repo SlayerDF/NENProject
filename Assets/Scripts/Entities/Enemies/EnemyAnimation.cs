@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies
 {
+    /// <summary>
+    /// Contains enemy animation logic.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class EnemyAnimation : EntityAnimation
     {
         private static readonly int Velocity = Animator.StringToHash("Velocity");

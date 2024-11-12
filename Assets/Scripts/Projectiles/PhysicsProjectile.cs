@@ -2,6 +2,10 @@
 
 namespace NeonBlack.Projectiles
 {
+    /// <summary>
+    /// Base class for projectiles that use physics.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     [RequireComponent(typeof(Rigidbody))]
     public abstract class PhysicsProjectile : Projectile
     {

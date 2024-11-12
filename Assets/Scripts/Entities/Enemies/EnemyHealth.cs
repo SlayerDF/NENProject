@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies
 {
+    /// <summary>
+    /// Contains enemy health logic.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class EnemyHealth : MonoBehaviour, IEntityHealth
     {
         #region Serialized Fields

@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies.Behaviors
 {
+    /// <summary>
+    /// Behavior that checks if the player is visible to the enemy.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class CheckPlayerVisibilityBehavior : MonoBehaviour
     {
         #region Serialized Fields

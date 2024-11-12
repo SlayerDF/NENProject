@@ -2,6 +2,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Player
 {
+    /// <summary>
+    /// Contains the logic related to player input.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public partial class PlayerInput : MonoBehaviour
     {
         #region Serialized Fields

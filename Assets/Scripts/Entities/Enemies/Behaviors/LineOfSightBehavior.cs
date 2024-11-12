@@ -7,6 +7,10 @@ using UnityEngine;
 
 namespace NeonBlack.Entities.Enemies.Behaviors
 {
+    /// <summary>
+    /// Behavior that checks if the player is within an entity's line of sight.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class LineOfSightBehavior : MonoBehaviour
     {
         #region Serialized Fields

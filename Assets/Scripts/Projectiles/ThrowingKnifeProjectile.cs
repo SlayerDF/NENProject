@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace NeonBlack.Projectiles
 {
+    /// <summary>
+    /// Projectile of throwing knife.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class ThrowingKnifeProjectile : PhysicsProjectile
     {
         public float Damage { get; set; }

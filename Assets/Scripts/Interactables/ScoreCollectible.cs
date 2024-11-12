@@ -2,8 +2,12 @@ using NeonBlack.Entities.Player;
 using NeonBlack.Systems.LevelState;
 using UnityEngine;
 
-namespace NeonBlack
+namespace NeonBlack.Interactables
 {
+    /// <summary>
+    /// Score collectible logic.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     [RequireComponent(typeof(Collider))]
     public class ScoreCollectible : MonoBehaviour
     {

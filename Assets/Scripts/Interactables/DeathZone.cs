@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace NeonBlack.Interactables
 {
+    /// <summary>
+    /// The death zone is a trigger that kills any entity that enters it.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class DeathZone : MonoBehaviour
     {
         #region Event Functions

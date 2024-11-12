@@ -2,6 +2,10 @@
 
 namespace NeonBlack.Systems
 {
+    /// <summary>
+    /// Base class for singletone objects on a scene.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public abstract class SceneSingleton<T> : MonoBehaviour where T : SceneSingleton<T>
     {
         protected static T Instance { get; private set; }
