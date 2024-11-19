@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Interactables
 {
+    /// <summary>
+    /// Collectible that adds a weapon to the player's inventory.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class WeaponCollectible : Collectible<PlayerInventory>
     {
         #region Serialized Fields

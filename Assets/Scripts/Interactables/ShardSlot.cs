@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace NeonBlack.Interactables
 {
+    /// <summary>
+    /// Interactable that consumes a shard to activate.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class ShardSlot : MonoBehaviour, IPlayerInteractable, IActivatable
     {
         #region Serialized Fields

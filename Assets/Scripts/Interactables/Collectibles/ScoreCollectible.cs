@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace NeonBlack.Interactables
 {
+    /// <summary>
+    /// Collectible that adds score to a player.
+    /// TP2 - Savina Elina
+    /// </summary>
     public class ScoreCollectible : Collectible<PlayerController>
     {
         #region Serialized Fields

@@ -6,6 +6,10 @@ using UnityEngine;
 
 namespace NeonBlack.Interactables
 {
+    /// <summary>
+    /// The portal exit is a trigger that loads the next scene when interacted with.
+    /// TP2 - Tulin Nikita
+    /// </summary>
     public class PortalExit : MonoBehaviour, IPlayerInteractable
     {
         #region Serialized Fields
