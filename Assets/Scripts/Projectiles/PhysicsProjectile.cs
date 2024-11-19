@@ -19,6 +19,12 @@ namespace NeonBlack.Projectiles
 
         #endregion
 
+        public float InitialVelocity
+        {
+            get => initialVelocity;
+            set => initialVelocity = value;
+        }
+
         protected Rigidbody RigidBody => rigidBody;
 
         #region Event Functions
@@ -27,7 +33,7 @@ namespace NeonBlack.Projectiles
         {
             base.OnEnable();
 
-            rigidBody.velocity = transform.forward * initialVelocity;
+            rigidBody.velocity = transform.forward * InitialVelocity;
         }
 
         #endregion

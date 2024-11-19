@@ -36,6 +36,9 @@ namespace NeonBlack.Entities.Player
         [SerializeField]
         private Vector2 dashInitialSpeed = new(10f, 3f);
 
+        [SerializeField]
+        private ParticleSystem dashParticles;
+
         #endregion
 
         private Vector2 currentSpeed;
@@ -74,6 +77,7 @@ namespace NeonBlack.Entities.Player
             isDashing = true;
             dashTimer = 0f;
             playerAnimation.OnDash();
+            dashParticles.Play();
         }
 
         private void DashPlayer()
@@ -81,6 +85,7 @@ namespace NeonBlack.Entities.Player
             if (controller.isGrounded && dashTimer > 0.5f)
             {
                 isDashing = false;
+                dashParticles.Stop();
                 return;
             }
 
@@ -108,7 +113,7 @@ namespace NeonBlack.Entities.Player
                 RotatePlayer(Quaternion.Euler(0, cameraOrbit.y, 0));
             }
 
-            if (isAttacking)
+            if (isAttacking || isAiming)
             {
                 RotatePlayer(Quaternion.Euler(0, cameraOrbit.y, 0));
             }

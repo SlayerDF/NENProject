@@ -23,7 +23,8 @@ namespace NeonBlack.Entities.Enemies.Behaviors
 
         #endregion
 
-        private readonly int raycastLayerMask = Layer.Player.ToMask() | Layer.Terrain.ToMask();
+        private readonly int raycastLayerMask =
+            Layer.Player.ToMask() | Layer.Terrain.ToMask() | Layer.Buildings.ToMask();
 
         private Transform playerTransform;
 
