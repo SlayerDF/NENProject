@@ -1,4 +1,5 @@
 using NeonBlack.Entities.Player;
+using NeonBlack.Systems.AudioManagement;
 using NeonBlack.Systems.LevelState;
 using UnityEngine;
 
@@ -21,6 +22,7 @@ namespace NeonBlack.Interactables
         {
             LevelState.IncrementScore(scoreForCollection);
             LevelState.NotifyShardCollected();
+            AudioManager.Play(AudioManager.InteractionsPrefab, AudioManager.ShardCollectedClip, transform.position);
         }
     }
 }

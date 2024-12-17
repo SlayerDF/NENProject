@@ -1,3 +1,4 @@
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using NeonBlack.Interfaces;
 using NeonBlack.Systems.AudioManagement;
@@ -31,6 +32,8 @@ namespace NeonBlack.Entities.Player
 
         #endregion
 
+        private bool collidedDeathZone;
+
         private bool killed;
 
         public Transform VisibilityChecker => visibilityChecker;
@@ -55,8 +58,13 @@ namespace NeonBlack.Entities.Player
 
         #region IEntityHealth Members
 
-        public void TakeDamage(float dmg)
+        public void TakeDamage(DamageSource source, float dmg)
         {
+            if (source == DamageSource.DeathZone)
+            {
+                collidedDeathZone = true;
+            }
+
             Kill();
         }
 
@@ -70,7 +78,7 @@ namespace NeonBlack.Entities.Player
             }
         }
 
-        public void Kill()
+        private void Kill()
         {
             if (killed)
             {
@@ -78,6 +86,12 @@ namespace NeonBlack.Entities.Player
             }
 
             killed = true;
+
+            KillAsync().Forget();
+        }
+
+        private async UniTaskVoid KillAsync()
+        {
             playerInput.ToggleMovementActions(false);
             playerInput.ToggleAttackActions(false);
             playerInput.ToggleInteractionActions(false);
@@ -87,10 +101,22 @@ namespace NeonBlack.Entities.Player
 
             AudioManager.Play(AudioManager.Music, AudioManager.PlayerDeathMusicClip);
 
-            UniTask.WhenAll(
-                AudioManager.Music.WaitFinish(),
-                playerAnimation.WaitAnimationEnd(PlayerAnimation.Dead, 2)
-            ).ContinueWith(SceneLoader.RestartLevel);
+            using var cts = CancellationTokenSource.CreateLinkedTokenSource(destroyCancellationToken);
+
+            try
+            {
+                var waitAnimation = playerAnimation.WaitAnimationEnd(PlayerAnimation.DeathAnimation, 2,
+                    cts.Token);
+                var waitDeathZoneCollision = UniTask.WaitUntil(() => collidedDeathZone, cancellationToken: cts.Token);
+
+                await UniTask.WhenAny(UniTask.WhenAll(AudioManager.Music.WaitFinish(cts.Token), waitAnimation),
+                    UniTask.WhenAll(waitDeathZoneCollision, AudioManager.Music.WaitFinish(cts.Token)));
+                SceneLoader.RestartLevel().Forget();
+            }
+            finally
+            {
+                cts.Cancel();
+            }
         }
     }
 }
